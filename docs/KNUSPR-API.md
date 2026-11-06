@@ -11,7 +11,7 @@
 - Laut Knuspr mit **OAuth-Anmeldung eines aktiven Knuspr-Kontos** (kein Passwort in App oder Repository ablegen).
 - Offiziell beworbene Fähigkeiten: Produkte suchen, aktuelle Preise/Verfügbarkeit prüfen, Angebote anzeigen, Warenkorb ändern, Bestellhistorie/-status lesen, frühere Bestellungen wiederholen bzw. wieder zusammenstellen, Rezepte, Einkaufslisten und Kundendienst.
 
-**Wichtige Grenze:** Die öffentlich zugänglichen Beschreibungen veröffentlichen keine verbindliche Liste aller MCP-Toolnamen mit JSON-Schemas. Nach erfolgreicher OAuth-Authentifizierung muss der Client `tools/list` ausführen und die Schemas selbst auslesen. **Ein endgültiger Checkout/Bezahlvorgang wird nicht ausdrücklich dokumentiert und darf vor einem Live-Nachweis nicht als unterstützt gelten.** „Frühere Bestellungen wiederholen“ ist kein Nachweis für eigenständige Zahlungs-/Bestellbestätigung.
+**Wichtige Grenze:** Die öffentlich zugänglichen Beschreibungen veröffentlichen keine verbindliche Liste aller MCP-Toolnamen mit JSON-Schemas. Nach erfolgreicher OAuth-Authentifizierung muss der Client `tools/list` ausführen und die Schemas selbst auslesen. **Ein endgültiger Checkout/Bezahlvorgang wird nicht ausdrücklich dokumentiert und darf vor einem Live-Nachweis nicht als unterstützt gelten.** Ein Bericht von EuroShop.mag (29.07.2026) beschreibt für die **Knuspr-ChatGPT-Anbindung** explizit die Übergabe des gefüllten Warenkorbs an Knuspr zur Prüfung und verbindlichen Bestellung. Dies ist ein starker Hinweis auf einen Checkout-Handoff, aber noch kein Nachweis des genauen Tool-Schemas des öffentlich dokumentierten MCP-Servers. „Frühere Bestellungen wiederholen“ ist kein Nachweis für eigenständige Zahlungs-/Bestellbestätigung.
 
 ### Evidenzmatrix
 
@@ -93,7 +93,11 @@ Knusprs [AGB](https://www.knuspr.de/seite/agb-general) untersagen in den Nutzung
 
 Die öffentliche Seite https://www.knuspr.de/seite/kontakt/ nennt `partner@knuspr.de`; die dort beschriebene Partnerrolle bezieht sich jedoch primär auf Produktlieferanten, nicht auf eine explizite offene Datenlizenz.
 
-## 5. Technische Abnahme / nächster Schritt
+## 5. Bestellabschluss: externer Checkout als belegtes Muster
+
+[EuroShop.mag vom 29.07.2026](https://www.euroshop-tradefair.es/en/media-news/euroshopmag/retail-technology/grocery-retail-is-embracing-conversational-commerce) beschreibt die Knuspr-ChatGPT-Integration so, dass nach Befüllen des Warenkorbs der Nutzer zu Knuspr wechselt und dort die Bestellung **selbst prüft und abschließt**. Diese Beobachtung spricht für ein sinnvolles Zielbild für Ernährungsgedächtnis: **Artikel automatisch/gezielt zur Knuspr-Einkaufsliste bzw. zum Warenkorb hinzufügen, verbindliche Bestellung auf der offiziellen Knuspr-Oberfläche freigeben.** Die richtige Übergabe-URL/Deep-Link-Mechanik und ihre Verfügbarkeit im eigenen Knuspr-MCP müssen noch nach Login untersucht werden. Keine URL erfinden und keine unbeaufsichtigte Bestellung auslösen.
+
+## 6. Technische Abnahme / nächster Schritt
 
 - [x] Offiziellen Knuspr-MCP-Endpunkt bestätigt.
 - [x] Offizielle Authentifizierungsart (OAuth) bestätigt.
@@ -119,3 +123,4 @@ Die öffentliche Seite https://www.knuspr.de/seite/kontakt/ nennt `partner@knusp
 6. https://reefapi.com/docs/rohlik (Drittanbieter, read-only)
 7. https://pypi.org/project/rohlik-api/ (inoffiziell)
 8. https://pypi.org/project/knuspr-api/ (inoffiziell)
+9. https://www.euroshop-tradefair.es/en/media-news/euroshopmag/retail-technology/grocery-retail-is-embracing-conversational-commerce (Bericht über Checkout-Handoff der ChatGPT-Integration)
