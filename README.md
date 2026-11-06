@@ -25,6 +25,15 @@ Eine offiziell freigegebene öffentliche Endkunden-API wurde nicht gefunden. Vie
 
 Eine Bestellung oder Zahlung darf nur nach expliziter Freigabe ausgelöst werden. Authentifizierungsdaten und Tokens dürfen niemals in Git gespeichert werden.
 
+
+## Knuspr (Rohlik) – offiziell verfügbarer MCP-Zugang
+
+**Stand: 06.11.2026.** Für **Knuspr.de** wurde eine **offizielle** Schnittstelle gefunden: [Knuspr MCP](https://www.knuspr.de/mcp-docs), Endpunkt `https://mcp.knuspr.de/mcp`, Anmeldung per OAuth. Damit sind Produktsuche, Preise, Verfügbarkeit, aktuelle Angebote, Warenkorbverwaltung sowie Bestellhistorie/-status laut Hersteller verfügbar. Ein **vollständiger Preiskatalogexport** und der **verbindliche Bestellabschluss** sind öffentlich nicht nachgewiesen; dafür sind Tool-Discovery nach Anmeldung bzw. Händlerfreigabe erforderlich.
+
+Für die Kotlin-Android-App bietet sich das [offizielle MCP-Kotlin-SDK](https://github.com/modelcontextprotocol/kotlin-sdk) an. Detaillierte Funktionsmatrix, alternative Read-only-REST-API (ReefAPI), rechtliche Grenzen und Test-/Integrationsplan:
+
+➡️ [**docs/KNUSPR-API.md**](docs/KNUSPR-API.md)
+
 ## Technische Dokumentation
 
 [docs/API-RECHERCHE.md](docs/API-RECHERCHE.md) dokumentiert die geprüften Methoden und Quellcodepfade, Datenfelder, API-Routen, offenen Nachweise und nächsten Validierungsschritte.
