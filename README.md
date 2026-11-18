@@ -1,5 +1,7 @@
 # piknik – Picnic-API-Recherche
 
+> **Status 18.11.2026 – API-RECHERCHEARCHIV (DEFERRED).** Picnic und Knuspr bleiben langfristige Optionen, sind aber **keine aktuelle P0-Entwicklungsabhängigkeit**. Aktuelle Integrationsplanung ausschließlich in [Ernaerungsgedaechnis](https://github.com/ecora2003-max/Ernaerungsgedaechnis) unter `AGENTS.md` und `docs/NOW.md`. Dieser Researchstand beweist keine produktive Schnittstelle oder Nutzungsberechtigung; keine automatische Bestellung, kein ungeprüfter Login/Netzabruf.
+
 **Stand: 06.11.2026 | Status: Quellcode-Recherche abgeschlossen, authentifizierter Live-Test offen.**
 
 Ziel dieses Repositories: APIs für das **Picnic-Sortiment**, **Preise**, **aktuelle Angebote**, **Warenkorb und Bestellungen** untersuchen, insbesondere für eine mögliche Integration in die App „Ernährungsgedächtnis“.
